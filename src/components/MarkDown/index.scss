@@ -1,0 +1,286 @@
+.markdown {
+    text-align: justify;
+    font-size: $font-size-normal;
+    line-height: $line-height-block;
+
+    .loading {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        transform: translateY(50%);
+
+        .dot {
+            display: inline-block;
+            margin: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: $loading-bg;
+            animation: slide 1s infinite;
+        }
+        .dot:nth-child(1) {
+            animation-delay: 0.1s;
+            background-color: $loading-color-one;
+        }
+        .dot:nth-child(2) {
+            animation-delay: 0.2s;
+            background-color: $loading-color-two;
+        }
+        .dot:nth-child(3) {
+            animation-delay: 0.3s;
+            background-color: $loading-color-three;
+        }
+        .dot:nth-child(4) {
+            animation-delay: 0.4s;
+            background-color: $loading-color-four;
+        }
+        .dot:nth-child(5) {
+            animation-delay: 0.5s;
+            background-color: $loading-color-five;
+        }
+    }
+
+    h1, h2, h3 {
+        .pound {
+            color: $color-second;
+            transition: all 0.3s ease;
+        }
+        margin: 20px 0px 15px;
+        transition: all 0.3s ease;
+        color: $color-header;
+        font-weight: bolder;
+        &:hover {
+            transform: translateX(10px);
+        }
+        &:hover .pound {
+            color: $color-main;
+        }
+    }
+
+    h3 {
+        margin: 15px 0px 10px;
+    }
+
+    h4, h5, h6 {
+        .pound {
+            color: $color-second;
+            transition: all 0.3s ease;
+        }
+        margin: 5px 0px 5px;
+        transition: all 0.3s ease;
+        color: $color-header;
+        font-weight: bolder;
+        &:hover {
+            transform: translateX(10px);
+        }
+        &:hover .pound {
+            color: $color-main;
+        }
+    }
+
+    p {
+      margin: 0 16px 25px;
+      word-break: break-all;
+      color: $color-general-text;
+      font-weight: lighter;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .katex {
+        font-size: 1.0em;
+    }
+
+    pre,
+    blockquote {
+      margin-bottom: 25px;
+    }
+
+    pre {
+        position: relative;
+        padding: 0 0;
+        // border-radius: 10px;
+        font-size: 14px;
+
+        .gutter {
+            position: relative;
+            width: 100%;
+            height: 35px;
+            background: $code-color-header;
+            border-radius: 10px 10px 0 0;
+            .light {
+                position: absolute;
+                top: 12px;
+                left: 12px;
+                height: 12px;
+                width: 12px;
+                background: $code-color-red;
+                border-radius: 50%;
+                box-shadow: 20px 0 $code-color-yello, 40px 0 $code-color-green;
+            }
+            .language {
+                position: absolute;
+                top: 0;
+                left: 75px;
+                font-size: 20px;
+            }
+        }
+
+        &:hover {
+            .fa-copy {
+              opacity: 1;
+            }
+        }
+
+        .code_wrapper {
+            width: 100%;
+            background: $code-color-main;
+            border-radius: 0 0 10px 10px;
+            code {
+                padding-bottom: 10px;
+                padding-left: 12px;
+            }
+        }
+
+        .fa-copy {
+            opacity: 0;
+            position: absolute;
+            top: 4px;
+            right: 0;
+            height: 36px;
+            width: 36px;
+            font-size: $font-size-large;
+            line-height: 32px;
+            text-align: center;
+            color: #888;
+            transition: all ease 0.3s;
+            &:hover {
+                color: $color-main;
+                transform: translateY(-3px);
+            }
+          }
+    }
+
+    p, ol, ul {
+        code {
+            margin: 0 3px;
+            padding: 2px 4px;
+            color: $color-inline-block;
+            font-size: $font-size-code;
+            word-wrap: break-word;
+            border-radius: 3px;
+            background-color: $bg-dark;
+        }
+    }
+
+    strong {
+        font-weight: 1000;
+        color: $color-header !important;
+    }
+
+    li {
+        color: $color-general-text;
+    }
+
+    blockquote {
+        position: relative;
+        // background: $color-main-shallow;
+        border-right: solid 3px $color-main;
+        // border-bottom: solid 3px $color-main;
+
+        padding: 36px 0;
+        font-style: italic;
+        // box-shadow: $block-shadow;
+
+        & > p {
+            margin: 10px 46px;
+        }
+
+        &::before {
+            position: absolute; 
+            font-family: Fontello;
+            font-size: $font-size-icon;
+            text-decoration: inherit;
+            color: $color-second;
+        }   
+        &::before {
+            content: '\f10d';
+            top: 6px;
+            left: 16px;
+        }
+    }
+
+    span[class*='img-box'] {
+      position: relative;
+      display: block;
+      margin: 0 auto 25px;
+      text-align: center;
+      border-radius: 3px;
+
+      &.full {
+        margin: 0 -16px;
+        .bg,
+        img {
+          border-radius: unset;
+        }
+      }
+
+      .bg {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        max-width: 100%;
+        border-radius: 3px;
+        background-color: $bg-dark;
+        transform: translateX(-50%);
+      }
+
+      img {
+        position: relative;
+        margin: 0 auto;
+        max-width: 100%;
+        opacity: 0;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: $card-shadow;
+        transition: all 0.3s ease-out, opacity 0.8s ease-out;
+      }
+
+      .title {
+        display: block;
+        padding-top: 8px;
+        font-style: italic;
+      }
+    }
+
+    .table-wrapper {
+      margin: 0 16px 25px;
+      max-width: 100%;
+      overflow-x: auto;
+      // @include scrollBar;
+
+      & > table {
+        margin: 0 auto;
+        border-radius: 3px;
+        border-spacing: 2px;
+        border-collapse: separate;
+        border: 1px solid #dfdfdf;
+        tr {
+          height: 32px;
+        }
+        th {
+          background-color: $bg-dark;
+        }
+        td,
+        th {
+          padding: 0 36px;
+          border: 1px solid #dfdfdf;
+        }
+      }
+    }
+}

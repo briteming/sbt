@@ -1,0 +1,188 @@
+// Colors
+$color-main: #D2B48C;
+$color-main-shallow: rgba(210, 180, 140, 0.2);
+$color-second: #F47466; // Color for things like '#'
+$color-filter-black: rgba(0, 0, 0, 0.5);
+$pretty-grey: #DDDDDD;
+
+// Basic configuration
+$box-background-solid: rgba(255,255,255);
+$box-background: rgba(255,255,255,0.8);
+$box-background-middle: rgba(255, 255, 255, 0.9);
+$box-shadow: 0 4px 8px 6px rgb(7 17 27 / 6%);
+$box-shadow-hover: 0 4px 12px 12px rgb(7 17 27 / 15%);
+$box-shadow-hover-up: 0 12px 12px rgb(7 17 27 / 15%);
+
+// Cards
+$card-padding: 10px;
+$card-border-basic: solid 3px grey;
+
+// Posts
+$font-size-h1: 30px;
+$font-size-post: 18px;
+$post-padding: 50px;
+$font-en-regular: "Times";
+$font-en-header: "TitilliumWeb";
+$font-en-footer: "Morena";
+$font-en-title: "Frizon";
+$font-ch-title: "NotoSerifSC";
+$font-ch-regular: "Songti";
+$font-ch-special: "HWMingChao";
+$color-header: rgba(70, 70, 70);
+$color-general-text: rgba(90, 90, 90);
+
+// Code Block
+$code-color-header: black;
+$code-color-main: #212121;
+
+// Inline Block
+$color-inline-block: #F47466;
+
+
+// -------------------------------------------------------------------------------------
+// Variables from Chanshiyu cuz the MarkDown component needs
+// Modified
+
+// Colors
+// colors for theme.
+// --------------------------------------------------
+$whitesmoke: #f5f5f5;
+$black-light: #444;
+$purple: #d68fe9;
+$purple-dark: #b28fce;
+$purple-dim: #986db2;
+$purple-deep: #b854d4;
+$brown: #795548;
+
+// Scaffolding
+// Settings for some of the most global styles.
+// --------------------------------------------------
+
+// Global text color on <body>
+$text-color: $black-light;
+
+// Global link color.
+$link-color: $purple-deep;
+
+// Selection
+$selection-bg: $purple;
+$selection-color: white;
+
+// Panel
+$panel-color: #5d3523;
+$panel-bg-color: #fbf4f1;
+$panel-theme-bg-from-color: #fbc2eb;
+$panel-theme-bg-to-color: #a6c1ee;
+$panel-theme-border: #ffe4d8;
+
+// Text Clip
+$text-clip-start: #fb618d;
+$text-clip-center: #8dc00a;
+$text-clip-end: $purple;
+
+// Background
+$bg-white: rgba(255, 255, 255, 0.6);
+$bg-white-dim: rgba(255, 255, 255, 0.7);
+$bg-white-deep: rgba(255, 255, 255, 0.8);
+$bg-dark: rgba(0, 0, 0, 0.1);
+$bg-dark-dim: rgba(0, 0, 0, 0.2);
+$bg-dark-deep: rgba(0, 0, 0, 0.3);
+$bg-aplayer: rgba(178, 143, 206, 0.65);
+$bg-sp-color: #f4f8fb;
+
+// Sakura
+$sakura-color: #e87a90;
+$sakura-color-light: #fedfe1;
+
+// Concat
+$concat-email-color: $purple-dark;
+$concat-github-color: #c3ce5f;
+$concat-telegram-color: #6fd4ff;
+$concat-music-color: #f596aa;
+$concat-rss-color: #ffba84;
+
+// Loading
+$loading-bg: #aaaaaa;
+$loading-color-one: #faaacc;
+$loading-color-two: #c8aacc;
+$loading-color-three: #96aacc;
+$loading-color-four: #acd0ff;
+$loading-color-five: #88cfff;
+
+// Code
+$code-color-red: #fc625d;
+$code-color-yello: #fdbc40;
+$code-color-green: #35cd4b;
+
+// Typography
+// Font, line-height, and elements colors.
+// --------------------------------------------------
+
+// Font families.
+$font-family-base: 'Fira Mono', 'Noto Serif SC', -apple-system, Roboto, Helvetica Neue, sans-serif;
+
+// Font Weight
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Font size
+$font-size-base: 16px;
+$font-size-icon: 24px;
+$font-size-code: $font-size-base - 1px;
+$font-size-normal: $font-size-base + 1px;
+$font-size-small: $font-size-base - 2px;
+$font-size-large: $font-size-base + 2px;
+$font-size-smaller: $font-size-base - 4px;
+$font-size-larger: $font-size-base + 4px;
+
+// Headings font size
+$font-size-headings-base: 24px;
+$font-size-headings-step: 2px;
+
+// Global line height
+$line-height-base: 1.6;
+$line-height-block: 1.8;
+
+// Z-index master list
+// --------------------------------------------------
+$zindex-bottom: -1;
+$zindex-1: 1;
+$zindex-2: 10;
+$zindex-3: 100;
+$zindex-4: 1000;
+
+// Layout sizes
+// --------------------------------------------------
+$page-desktop: 876px;
+
+// Padding sizes
+// --------------------------------------------------
+$card-padding-small: 8px 10px;
+$card-padding: 12px 14px;
+$code-padding: 12px 14px;
+
+// Shadow
+// --------------------------------------------------
+$card-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+$card-shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.24);
+$card-shadow-light: 0 14px 38px rgba(0, 0, 0, 0.08), 0 3px 8px rgba(0, 0, 0, 0.06);
+$card-shadow-light-hover: 0 14px 38px rgba(0, 0, 0, 0.14), 0 3px 8px rgba(0, 0, 0, 0.12);
+$block-shadow: #ccc 0px 10px 10px -10px inset, #ccc 0px -10px 10px -10px inset;
+
+// Image Assets
+// --------------------------------------------------
+$mobile-bg: url('https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/mobile.jpg');
+$aplayer-bg: url('https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/reimu.png');
+$backtop-bg: url('https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/back-top.png');
+
+// Transition
+// --------------------------------------------------
+$transition-base: all 0.3s ease 0s, transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+
+// About
+// --------------------------------------------------
+$avatar-size-pc: 100px;
+$avatar-size-sp: 80px;
+
+$contact-size-pc: 54px;
+$contact-size-sp: 48px;

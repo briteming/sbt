@@ -1,0 +1,139 @@
+.card {
+	position: relative;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	a {
+		color: black;
+		text-decoration: none;
+	}
+
+	.block {
+		position: relative;
+		left: 20%;
+		width: 60%;
+		height: 100px;
+		margin: 40px 0;
+
+		// background: blue;
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		.sign {
+			position: relative;
+			width: 70px;
+			height: 70px;
+			border-radius: 100%;
+			border: solid 2px black;
+
+			font-size: 35px;
+			font-family: $font-ch-special;
+
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+		.sign:before {
+			content: '';
+			position: absolute;
+			left: 4px;
+			top: 4px;
+			width: 60px;
+			height: 60px;
+			border-radius: 100%;
+			border: solid 1px grey;
+		}
+
+		.post_content {
+			width: 70%;
+			height: 100%;
+			// background: yellow;
+			margin-left: 50px;
+
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: space-between;
+
+			font-family: $font-ch-regular $font-en-regular;
+
+			transition: all 0.5s;
+
+			.post_title {
+				// background: blue;
+				// position: absolute;
+				width: 95%;
+				height: 23px;
+				border-bottom: solid 1px grey;
+				// border: solid 1px blue;
+				text-align: justify;
+				font-size: 20px;
+				padding: $card-padding;
+			}
+			.post_description {
+				width: 95%;
+				height: 50px;
+				// padding: 10px;
+				// padding: $card-padding;
+				padding: 1px;
+				// background: blue;
+
+				text-align: justify;
+				word-break: break-all;
+
+				p {
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					
+					margin: 0;
+
+					text-overflow: ellipsis;
+					overflow: hidden;
+					line-height: 25px;
+
+					-webkit-line-clamp: 2;
+				}
+			}
+
+			&:hover {
+				color: $color-main;
+			}
+		}
+	}
+	.button_more {
+		position: relative;
+		width: 100px;
+		height: 40px;
+		border: solid 1px $pretty-grey;
+		color: $pretty-grey;
+		border-radius: 50px;
+		// background: blue;
+		left: 50%;
+		margin: 50px -50px 50px;
+
+		cursor: pointer;
+		transition: all 0.4s;
+
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+
+		p {
+			font-family: $font-en-header;
+			font-size: 18px;
+		}
+
+		&:hover {
+			color: $color-main;
+			border-color: $color-main;
+		}
+	}
+}
