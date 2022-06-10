@@ -11,8 +11,9 @@ export default {
 	repo: 'Colythme',
 	// token: ['ghp_lRDiZBsnmei2', 'DK9XyU4VDsxVYiYM2z36T6Cb'],
 	// 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
-	token: ['ghp_xus27Y10XYOt', 'Wd0JS4miBWmPWsPdDr2MMZfV'],
+	// token: ['ghp_xus27Y10XYOt', 'Wd0JS4miBWmPWsPdDr2MMZfV'],
 	// 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
+	token: 
 
 
 	// Gitalk configuration
