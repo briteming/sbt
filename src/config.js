@@ -1,19 +1,19 @@
 export default {
 	// Website title
-	title: "Colythme",
-	subtitle: "NO GAME NO LIFE",
+	title: "Colythme blog of brite",
+	subtitle: "NO REST, NO LIFE",
 	// quote: appear in the home page
 	quote: "では、ゲームを始めましょう",
 	color_main: "#D2B48C",
 
 	// Github Issues configuration
-	username: 'Seryol',
-	repo: 'Colythme',
+	username: 'briteming',
+	repo: 'sbt',
 	// token: ['ghp_lRDiZBsnmei2', 'DK9XyU4VDsxVYiYM2z36T6Cb'],
 	// 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
 	// token: ['ghp_xus27Y10XYOt', 'Wd0JS4miBWmPWsPdDr2MMZfV'],
 	// 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
-	token: 
+	token: ['ghp_24XMnFvZl9uyf', 'EmbPwpZXN4unqN5tL0mGNcr'],
 
 
 	// Gitalk configuration
